@@ -1,0 +1,412 @@
+:root {
+    --clr-primary-background: hsl(172, 67%, 45%);
+    /* strong cyan */
+    --clr-scheme-1: hsl(183, 100%, 15%);
+    /* very dark cyan */
+    --clr-scheme-2: hsl(186, 14%, 43%);
+    /* dark grayish cyan */
+    --clr-scheme-3: hsl(184, 14%, 56%);
+    /* grayish cyan */
+    --clr-scheme-4: hsl(185, 41%, 84%);
+    /* light grayish cyan */
+    --clr-scheme-5: hsl(189, 41%, 97%);
+    /* very light grayish cyan */
+    --clr-scheme-6: hsl(0, 0%, 100%);
+    /* white */
+
+    /* font size - form inputs*/
+    --ff-size: 24px;
+
+    /* font weights */
+    --ff-weight: 700;
+
+    /* font families */
+    --ff-primary: 'Space Mono', sans-serif;
+
+    --transition: all 0.3s linear;
+    --spacing: 0.35rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+* {
+    background: var(--clr-scheme-4);
+    font-family: var(--ff-primary);
+}
+
+@media screen and (min-width: 375px) {
+
+    .container {
+        display: grid;
+        margin-top: 70px;
+    }
+
+    .split {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: var(--clr-scheme-1);
+        letter-spacing: var(--spacing);
+    }
+
+    .calculator {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        width: 60%;
+        height: 60vh;
+        background-color: var(--clr-scheme-6);
+        border-radius: 15px;
+    }
+
+
+
+    /* 1st half of the calculator - Calculation Section */
+
+    p:not(.tips p) {
+        margin-bottom: 5px;
+    }
+
+    .input-section,
+    p,
+    .input1,
+    .input2,
+    .tips,
+    .tipAmounts1,
+    .tipAmounts2 {
+        background-color: var(--clr-scheme-6);
+    }
+
+    .input-section {
+        margin: 25px -20px 25px 30px;
+        width: 50%;
+    }
+
+    .input1,
+    .input2,
+    .custom {
+        border-width: 0px;
+        border-radius: 5px;
+        background-color: var(--clr-scheme-5);
+    }
+
+    .input1,
+    .input2 {
+        width: 80%;
+        text-align: right;
+        font-size: 24px;
+        color: var(--clr-scheme-1);
+    }
+
+    .input2 {
+        margin-bottom: 20px;
+    }
+
+    input[type=text]:hover,
+    input[type=text]:focus-visible {
+        border: 2px solid var(--clr-primary-background);
+        cursor: pointer;
+    }
+
+    img {
+        background-color: hsla(0, 0%, 100%, 0.03);
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .tips {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .tipAmounts1 {
+        margin-bottom: 10px;
+    }
+
+    .tipAmounts1,
+    .tipAmounts2 {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type=button] {
+        width: 75%;
+        height: 30px;
+        color: var(--clr-scheme-6);
+        background-color: var(--clr-scheme-1);
+        border-color: var(--clr-scheme-1);
+        border-radius: 5px;
+        border-width: 0px;
+    }
+
+    input[type=button]:hover {
+        cursor: pointer;
+        color: var(--clr-scheme-1);
+        background-color: hsla(172, 67%, 45%, 0.3);
+        border-color: hsla(172, 67%, 45%, 0.3)
+    }
+
+    .custom {
+        width: 75%;
+        font-size: 15px;
+        color: var(--clr-scheme-2);
+        text-align: center;
+    }
+
+    .custom:focus-visible {
+        text-align: right;
+    }
+
+
+
+    /* 2nd half of the calculator - Results Section */
+
+    .results {
+        border-radius: 15px;
+        margin: 25px 25px 25px 0px;
+        width: 50%;
+    }
+
+    .results,
+    .tipDesc,
+    .amountDesc,
+    .results .tipDesc span,
+    .results .amountDesc span {
+        background-color: var(--clr-scheme-1);
+    }
+
+    .tipDesc,
+    .amountDesc {
+        display: flex;
+    }
+
+    .tipDesc {
+        margin: 50px 30px 15px 30px;
+    }
+
+    .amountDesc {
+        margin: 20px 30px 15px 30px;
+    }
+
+    .results .tipDesc span:not(.tipVal),
+    .results .amountDesc span:not(.amountVal) {
+        color: var(--clr-scheme-6);
+    }
+
+    .results .tipDesc .single,
+    .results .amountDesc .single {
+        font-size: x-small;
+        color: hsl(184, 14%, 56%) !important;
+        position: absolute;
+        margin: 25px 0px 0px 0px;
+    }
+
+    .results .tipDesc .tipVal,
+    .results .amountDesc .amountVal {
+        margin-left: auto;
+        color: var(--clr-primary-background);
+        font-size: 30px;
+        font-weight: var(--ff-weight);
+        letter-spacing: 0.2rem;
+    }
+
+    input[type=reset] {
+        width: 80%;
+        height: 13%;
+        color: var(--clr-scheme-1);
+        background-color: var(--clr-primary-background);
+        border-color: var(--clr-primary-background);
+        border-radius: 5px;
+        border-width: 1px;
+        margin: 20% 0px 0px 10%;
+        font-size: large;
+        text-transform: uppercase;
+    }
+
+    input[type=reset]:hover {
+        background-color: var(--clr-scheme-4);
+        border-color: hsla(172, 67%, 45%, 0.3);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* larger screens */
+@media screen and (min-width: 800px) {
+
+    .amountDesc {
+        margin-top: 50px;
+    }
+
+    .tipDesc,
+    .amountDesc,
+    .results .tipDesc .tipVal,
+    .results .amountDesc .amountVal {
+        font-size: small;
+        letter-spacing: 0.1rem;
+    }
+
+    input[type=reset] {
+        margin-top: 45%;
+    }
+}
+
+
+
+
+
+/* desktop design - 1440px */
+
+@media screen and (min-width: 962px) {
+
+    .calculator {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        width: 60%;
+        height: 60vh;
+        background-color: var(--clr-scheme-6);
+        border-radius: 15px;
+    }
+
+
+
+    /* 1st half of the calculator - Calculation Section */
+
+    .input-section {
+        margin: 25px -20px 25px 30px;
+        width: 50%;
+    }
+
+    .input1,
+    .input2,
+    .custom {
+        border-width: 0px;
+        border-radius: 5px;
+        background-color: var(--clr-scheme-5);
+    }
+
+    .input1,
+    .input2 {
+        width: 80%;
+        text-align: right;
+        font-size: 24px;
+        color: var(--clr-scheme-1);
+    }
+
+    .input2 {
+        margin-bottom: 20px;
+    }
+
+    .tips {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .tipAmounts1 {
+        margin-bottom: 10px;
+    }
+
+    .tipAmounts1,
+    .tipAmounts2 {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type=button] {
+        width: 75px;
+        height: 30px;
+        color: var(--clr-scheme-6);
+        background-color: var(--clr-scheme-1);
+        border-color: var(--clr-scheme-1);
+        border-radius: 5px;
+        border-width: 0px;
+    }
+
+    .custom {
+        width: 30%;
+        font-size: 15px;
+        color: var(--clr-scheme-2);
+        text-align: center;
+    }
+
+
+
+    /* 2nd half of the calculator - Results Section */
+
+    .results {
+        border-radius: 15px;
+        margin: 25px 25px 25px 0px;
+        width: 50%;
+    }
+
+    .results,
+    .tipDesc,
+    .amountDesc,
+    .results .tipDesc span,
+    .results .amountDesc span {
+        background-color: var(--clr-scheme-1);
+    }
+
+    .tipDesc,
+    .amountDesc {
+        display: flex;
+    }
+
+    .tipDesc {
+        margin: 50px 30px 15px 30px;
+    }
+
+    .amountDesc {
+        margin: 20px 30px 15px 30px;
+    }
+
+    .results .tipDesc span:not(.tipVal),
+    .results .amountDesc span:not(.amountVal) {
+        color: var(--clr-scheme-6);
+    }
+
+    .results .tipDesc .single,
+    .results .amountDesc .single {
+        font-size: x-small;
+        color: hsl(184, 14%, 56%) !important;
+        position: absolute;
+        margin: 25px 0px 0px 0px;
+    }
+
+    .results .tipDesc .tipVal,
+    .results .amountDesc .amountVal {
+        margin-left: auto;
+        color: var(--clr-primary-background);
+        font-size: 30px;
+        font-weight: var(--ff-weight);
+        letter-spacing: 0.2rem;
+    }
+
+    input[type=reset] {
+        width: 80%;
+        height: 13%;
+        color: var(--clr-scheme-1);
+        background-color: var(--clr-primary-background);
+        border-color: var(--clr-primary-background);
+        border-radius: 5px;
+        border-width: 1px;
+        margin: 20% 0px 0px 10%;
+        font-size: large;
+        text-transform: uppercase;
+    }
+
+    input[type=reset]:hover {
+        background-color: var(--clr-scheme-4);
+        border-color: hsla(172, 67%, 45%, 0.3);
+        cursor: pointer;
+    }
+}
