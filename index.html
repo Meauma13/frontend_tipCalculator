@@ -29,58 +29,61 @@
 
 <body>
 
-  <div class="container">
-    <div class="split">
-      spli <br> tter
-    </div>
-
-    <div class="calculator">
-      <div class="input-section">
-        <p>Bill</p>
-        <img src="/images/icon-dollar.svg" alt="currency">
-        <input type="text" name="billAmount" id="billAmount" class="input1">
-
-        <div class="tips">
-          <p>Select Tip %</p>
-          <div class="tipAmounts1">
-            <input type="button" value="5%">
-            <input type="button" value="10%">
-            <input type="button" value="15%">
-          </div>
-          <div class="tipAmounts2">
-            <input type="button" value="25%">
-            <input type="button" value="50%">
-            <input type="text" class="custom" placeholder="Custom">
-          </div>
-        </div>
-
-        <p>Number of People</p>
-        <img src="/images/icon-person.svg" alt="currency">
-        <input type="text" name="numPeople" id="numPeople" class="input2">
+  <main>
+    <div class="container">
+      <div class="split">
+        spli <br> tter
       </div>
 
-      <div class="results">
-        <div class="tipDesc">
-          <span>Tip Amount</span>
-          <span class="single">/ person</span>
-          <span class="tipVal" id="tipVal">$4.27</span>
-        </div>
-        <div class="amountDesc">
-          <span>Total</span>
-          <span class="single">/ person</span>
-          <span class="amountVal" id="amountVal">$32.79</span>
+      <div class="calculator">
+        <div class="input-section">
+          <p>Bill</p>
+          <img src="/images/icon-dollar.svg" alt="currency">
+          <input type="text" name="billAmount" id="billAmount" class="input1" placeholder="0">
+
+          <div class="tips">
+            <p>Select Tip %</p>
+            <div class="tipAmounts">
+              <input type="button" value="5%">
+              <input type="button" value="10%">
+              <input type="button" value="15%">
+              <input type="button" value="25%">
+              <input type="button" value="50%">
+              <input type="text" class="custom" placeholder="Custom">
+            </div>
+          </div>
+
+          <p>Number of People</p>
+          <img src="/images/icon-person.svg" alt="currency">
+          <input type="text" name="numPeople" id="numPeople" class="input2" placeholder="0">
         </div>
 
-        <input type="reset" value="reset">
+        <div class="results">
+          <div class="tipDesc">
+            <span class="td">Tip Amount</span>
+            <span class="single">/ person</span>
+            <span class="tipVal" id="tipVal">$0.00</span>
+          </div>
+          <div class="amountDesc">
+            <span class="ad">Total</span>
+            <span class="single">/ person</span>
+            <span class="amountVal" id="amountVal">$0.00</span>
+          </div>
+
+          <input type="reset" value="reset">
+        </div>
       </div>
+
     </div>
 
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Meauma13" target="_blank">Anthony Aligbe</a>.
+    </div>
+  </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/Meauma13" target="_blank">Anthony Aligbe</a>.
-  </div>
+  <script src="calc.js"></script>
+
 </body>
 
 </html>

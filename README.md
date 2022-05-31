@@ -12,9 +12,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -49,10 +47,10 @@ Users should be able to:
 
 
 ### What I learned
-
+1. Usage of percentage values to greatly enhance automatic scaling and resizing.
 
 ### Continued development
-
+Improving my development speed with CSS
 
 ## Author
 
