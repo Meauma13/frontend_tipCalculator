@@ -371,7 +371,7 @@
 @media screen and (min-width: 992px) {
 
     .calculator {
-        height: 55vh;
+        height: 60vh;
     }
 
     input[type=button] {

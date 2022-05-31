@@ -27,12 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/images/Screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/meauma13/frontend_tipCalculator)
 - Live Site URL: [Add live site URL here](https://)
 
 ## My process
@@ -54,6 +53,6 @@ Improving my development speed with CSS
 
 ## Author
 
-- Website - [Add your name here](https://www.nanosoftechsolutions.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Meauma13)
+- Website - [NanoSoft Technologies](https://www.nanosoftechsolutions.com)
+- Frontend Mentor - [@Meauma13](https://www.frontendmentor.io/profile/Meauma13)
 - Twitter - [@13Xquite](https://www.twitter.com/13Xquite)
